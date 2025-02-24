@@ -1,0 +1,13 @@
+current directory: /home/definenight/Rails_proj/message_me/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/usr/share/rvm/rubies/ruby-2.3.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.3.0/lib/ruby/site_ruby/2.3.0 -r ./siteconf20250225-16373-1oe7o4j.rb extconf.rb
+creating Makefile
+
+current directory: /home/definenight/Rails_proj/message_me/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/definenight/Rails_proj/message_me/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/definenight/Rails_proj/message_me/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
