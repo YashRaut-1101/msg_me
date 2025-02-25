@@ -17,18 +17,25 @@
 //= require_tree .
 
 
-function initializeDropdowns() {
-  console.log("Initializing dropdown...");
-  
+function initializeUIComponents() {
+  console.log("Initializing UI components...");
+
   // Destroy any existing dropdown instance to avoid conflicts
   $('.ui.dropdown').dropdown('destroy');
 
   // Reinitialize the dropdown
   $('.ui.dropdown').dropdown();
+
+  // Enable message close button functionality
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
 }
 
-$(document).on('turbolinks:load', initializeDropdowns);
-$(document).ready(initializeDropdowns); // For normal page loads
+// Ensure the function runs on both Turbolinks load and normal page load
+$(document).on('turbolinks:load', initializeUIComponents);
+$(document).ready(initializeUIComponents);
+
 
 
 
