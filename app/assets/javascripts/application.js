@@ -13,4 +13,27 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require semantic-ui
 //= require_tree .
+
+
+function initializeDropdowns() {
+  console.log("Initializing dropdown...");
+  
+  // Destroy any existing dropdown instance to avoid conflicts
+  $('.ui.dropdown').dropdown('destroy');
+
+  // Reinitialize the dropdown
+  $('.ui.dropdown').dropdown();
+}
+
+$(document).on('turbolinks:load', initializeDropdowns);
+$(document).ready(initializeDropdowns); // For normal page loads
+
+
+
+  
+  
+  
+  
+  
