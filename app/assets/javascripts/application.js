@@ -17,24 +17,30 @@
 //= require_tree .
 
 
-function initializeUIComponents() {
-  console.log("Initializing UI components...");
+scroll_bottom = function() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
 
-  // Destroy any existing dropdown instance to avoid conflicts
-  $('.ui.dropdown').dropdown('destroy');
+submit_message = function() {
+  $('#message_body').on('keydown', function(e) {
+    if (e.keyCode == 13) {
+      $('button').click();
+      e.target.value = "";
+    };
+  });
+};
 
-  // Reinitialize the dropdown
+
+$(document).on('turbolinks:load', function() {
   $('.ui.dropdown').dropdown();
-
-  // Enable message close button functionality
   $('.message .close').on('click', function() {
     $(this).closest('.message').transition('fade');
   });
-}
-
-// Ensure the function runs on both Turbolinks load and normal page load
-$(document).on('turbolinks:load', initializeUIComponents);
-$(document).ready(initializeUIComponents);
+  submit_message();
+  scroll_bottom();
+})
 
 
 

@@ -1,0 +1,16 @@
+current directory: /home/definenight/message_me/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.6/ext/stringio
+/usr/share/rvm/rubies/ruby-2.6.5/bin/ruby -I /usr/share/rvm/rubies/ruby-2.6.5/lib/ruby/site_ruby/2.6.0 -r ./siteconf20250305-13165-zs0h6l.rb extconf.rb
+checking for rb_io_extract_modeenc() in ruby/io.h... no
+creating Makefile
+
+current directory: /home/definenight/message_me/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.6/ext/stringio
+make "DESTDIR=" clean
+
+current directory: /home/definenight/message_me/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.6/ext/stringio
+make "DESTDIR="
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/definenight/message_me/vendor/bundle/ruby/2.6.0/gems/stringio-3.0.6/ext/stringio
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20250305-13165-v5axus
